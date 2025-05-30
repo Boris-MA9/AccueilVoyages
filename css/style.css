@@ -16,6 +16,13 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 1440px;
+    height: 79px;
 }
 
 header nav{
@@ -23,20 +30,32 @@ header nav{
     justify-content: space-between;
     align-items: flex-start;
     height: 79px;
+    margin: 0;
+    padding: 0;
+    width: 1440px;
 }
 
 .logo {
-    align-self: center;
+    Padding: 30px 50px
 }
 
 nav ul {
     list-style: none;
     display: flex;
     gap: 68px;
+    margin: 0;
+    padding: 0;
     height: 35px;
+    width: 344px;
 }
 
-nav a:hover {
+li {
+    display: flex;
+    align-items: flex-end;
+    
+}
+
+li:hover {
     color: #0065FC;
     border-top: 2px solid #0065FC;
 }

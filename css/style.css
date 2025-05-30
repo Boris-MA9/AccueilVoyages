@@ -18,6 +18,30 @@ body {
     justify-content: center;
 }
 
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 79px;
+}
+
+.logo {
+    align-self: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 68px;
+    height: 35px;
+}
+
+nav a:hover {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+
 .main-container {
     width: 100%;
     max-width: 1440px;

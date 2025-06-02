@@ -60,6 +60,43 @@ li:hover {
     border-top: 2px solid #0065FC;
 }
 
+input::placeholder {
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  width: 197px;
+  height: 21px;
+  size: 18px;
+}
+
+.point img{
+    height: 49px;
+}
+
+form {
+    display: flex;
+    align-items: stretch;
+    width: 377px;
+    height: 49px;
+}
+
+input#recherche {
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid  #f2f2f2;
+    border-left: none;
+    border-right: none;
+    width: 195px;
+}
+
+input[type="submit"] {
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0px 15px 15px 0px;
+    padding: 15px 16px; 
+    width: 132px;
+    border: none;
+    font-weight: 700;
+}
 
 .main-container {
     width: 100%;

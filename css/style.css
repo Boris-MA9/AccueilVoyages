@@ -36,7 +36,7 @@ header nav{
 }
 
 .logo {
-    Padding: 30px 50px
+    padding: 30px 0;
 }
 
 nav ul {
@@ -60,6 +60,16 @@ li:hover {
     border-top: 2px solid #0065FC;
 }
 
+/* barre de recherche */
+
+.searchbar {
+    display: flex;
+    align-items: stretch;
+    width: 377px;
+    height: 49px;
+    margin-top: 35px;
+}
+
 input::placeholder {
   font-weight: 700;
   color: black;
@@ -73,13 +83,6 @@ input::placeholder {
     height: 49px;
 }
 
-form {
-    display: flex;
-    align-items: stretch;
-    width: 377px;
-    height: 49px;
-}
-
 input#recherche {
     border-top: 1px solid #f2f2f2;
     border-bottom: 1px solid  #f2f2f2;
@@ -87,6 +90,7 @@ input#recherche {
     border-right: none;
     width: 195px;
 }
+
 
 input[type="submit"] {
     background-color: #0065FC;
@@ -97,6 +101,72 @@ input[type="submit"] {
     border: none;
     font-weight: 700;
 }
+
+
+
+/* barre de filtre */
+
+.filterbar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 758px;
+    height: 50px;
+    margin-top: 35px;
+}
+
+.filteroption {
+    display: flex;
+    align-items: center;
+    border: solid 2px #d9d9d9;
+    border-radius: 25px;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.eco {
+    width: 173px;
+    height: 46px;
+}
+
+.familial {
+    width: 134px;
+    height: 46px
+}
+
+.romantique {
+    width: 170px;
+    height: 46px;
+}
+
+.pepites {
+    width: 170px;
+    height: 46px;
+}
+
+.filteroption img {
+    margin-right: 8px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.filteroption:hover {
+    background-color: #DEEBFF;
+}
+
+/* infobar */
+
+.infobar {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
 
 .main-container {
     width: 100%;

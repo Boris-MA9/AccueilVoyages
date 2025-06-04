@@ -30,23 +30,40 @@
             <section>
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
-                <form class="searchbar" method="post" action="">
+
+                <form class="searchbar" method="get" action="">
                     <div class="point">
                         <img src="images/point.png" alt="localisation">
                     </div>
                         <label for="recherche"></label>
                         <input type="text" name="ville" id="recherche" placeholder="Marseille, France">
                         <input type="submit" value="Rechercher" class="recherche-bouton">
-                </form> <!--Mettre la barre de recherche-->
-                <div class="filterbar">
-                    <p>Filtres</p>
-                    <a class="economique" href="">Economique</a>
-                    <a class="familial" href="">Familial</a>
-                    <a class="romantique" href="">Romantique</a>
-                    <a class="pepites" href="">Nos pépites</a>
-                </div>
+                </form>
+
+                <form method="get" action="">
+                    <div class="filterbar">
+                        <h3>Filtres</h3>
+                        <label class="filteroption eco">
+                            <input type="checkbox" name="filter" value="economique">
+                            <img src="images/billet.png" alt="billet">Économique 
+                        </label>
+                        <label class="filteroption familial">
+                            <input type="checkbox" name="filter" value="Familial">
+                            <img src="images/homme.png" alt="homme">Familial 
+                        </label>
+                        <label class="filteroption romantique">
+                            <input type="checkbox" name="filter" value="Romantique">
+                            <img src="images/coeur.png" alt="coeur">Romantique 
+                        </label>
+                        <label class="filteroption pepites">
+                            <input type="checkbox" name="filter" value="pepites">
+                            <img src="images/flamme.png" alt="flamme">Nos pépites 
+                        </label>
+                    </div>
+                </form>
+
                 <div class="infobar">
-                    <img src="" alt="info">
+                    <img src="images/Icon.png" alt="info">
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
 
                 </div>
@@ -291,7 +308,6 @@
                             </article>
                         </a>
                 </div>
-
             </section>
         </main>
         <footer>

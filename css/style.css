@@ -212,7 +212,7 @@ a {
 .card {
     background-color: white;
     border-radius: 20px;
-    padding: 5px;
+    padding: 5px; /* a voir comment ne pas généraliser ?*/
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -298,6 +298,10 @@ a {
     margin-bottom: 5px;
 }
 
+h3 {
+    font-size: 18px;
+}
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -349,11 +353,23 @@ a {
     display: flex;
     gap: 30px;
     margin: 30px 0;
-    
-
 }
 
+.activites-title {
+    font-size: 22px;
+    padding-left: 30px;
+    font-weight: 700;
+}
 
+.activites-cards .card-title {
+    padding: 0 19px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.activites-cards img {
+    object-fit: cover;
+}
 
 /*footer*/
 

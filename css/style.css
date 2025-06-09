@@ -1,4 +1,5 @@
 /****** General ***********/
+
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -44,7 +45,7 @@ nav ul {
     display: flex;
     gap: 68px;
     margin: 0;
-    padding: 0;
+    padding-right: 50px;
     height: 35px;
     width: 344px;
 }
@@ -60,6 +61,20 @@ li:hover {
     border-top: 2px solid #0065FC;
 }
 
+section {
+    margin: 18px 0;
+}
+
+/* introduction */
+
+h1 {
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+.introduction p {
+    margin-top: 0;
+}
+
 /* barre de recherche */
 
 .searchbar {
@@ -70,36 +85,44 @@ li:hover {
     margin-top: 35px;
 }
 
+
 input::placeholder {
   font-weight: 700;
   color: black;
-  text-align: center;
-  width: 197px;
-  height: 21px;
-  size: 18px;
 }
 
-.point img{
+.recherche-icon {
+    background-color: #f2f2f2;
+    width: 50px;
     height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
-input#recherche {
+.recherche-input {
     border-top: 1px solid #f2f2f2;
     border-bottom: 1px solid  #f2f2f2;
     border-left: none;
     border-right: none;
     width: 195px;
+    text-align: center;
+    font-size: 18px;
 }
 
 
-input[type="submit"] {
+.recherche-button {
     background-color: #0065FC;
     color: white;
     border-radius: 0px 15px 15px 0px;
-    padding: 15px 16px; 
+    padding: 15px 16px;
     width: 132px;
     border: none;
+    font-size: 18px;
     font-weight: 700;
+    
 }
 
 
@@ -115,13 +138,25 @@ input[type="submit"] {
     margin-top: 35px;
 }
 
-.filteroption {
+.filterbar p {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+button {
     display: flex;
     align-items: center;
     border: solid 2px #d9d9d9;
     border-radius: 25px;
     justify-content: center;
     font-weight: 700;
+    background-color: white;
+    gap: 10px;
+    font-size: 17px;
+}
+
+.filterbar i {
+    color: #0065FC;
 }
 
 .eco {
@@ -144,15 +179,7 @@ input[type="submit"] {
     height: 46px;
 }
 
-.filteroption img {
-    margin-right: 8px;
-}
-
-input[type="checkbox"] {
-    display: none;
-}
-
-.filteroption:hover {
+.filterbar button:hover {
     background-color: #DEEBFF;
 }
 
@@ -164,9 +191,6 @@ input[type="checkbox"] {
     align-items: center;
     gap: 10px;
 }
-
-
-
 
 .main-container {
     width: 100%;
@@ -212,6 +236,7 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+
 }
 
 .hebergements-and-populaires section {
@@ -223,7 +248,54 @@ a {
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
+    width: 871px;
+    height: 614px;
+    display: flex;
+}
+
+.hebergements-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 811px;
+    margin: 30px 0;
+}
+
+.hebergements-cards img {
+    width: 100%;
+    height: 114px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+
+.hebergements-cards .card {
+    width: 240px;
+    height: 207px;
+}
+
+.hebergements-cards .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 15px;
+    margin-top: 0;
+    gap: 8px;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
 }
 
 /****** Populaires ***********/
@@ -239,7 +311,7 @@ a {
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 33px;
+    margin-top: 30px;
 }
 
 .populaires-cards img {
@@ -271,7 +343,50 @@ a {
     margin-bottom: 5px;
 }
 
+/* activités */
 
+.activites-cards {
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;
+    
+
+}
+
+
+
+/*footer*/
+
+footer {
+    display: flex;
+    width: 1340px;
+    height: 163px;
+    background-color: #F2F2F2;
+}
+
+.propos {
+    display: flex;
+    flex-direction: column;
+    width: 446.67px;
+    padding: 0 20px;
+    gap: 15px;
+}
+
+.heberg {
+    display: flex;
+    flex-direction: column;
+    width: 446.67px;
+    padding: 0 20px;
+    gap: 15px;
+}
+
+.assistance {
+    display: flex;
+    flex-direction: column;
+    width: 446.67px;
+    padding: 0 20px;
+    gap: 15px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */

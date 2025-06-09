@@ -28,39 +28,26 @@
         </header>
         <main>
             <section>
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre-ville ou en pleine nature</p>
+                <div class="introduction">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                </div>
 
-                <form class="searchbar" method="get" action="">
-                    <div class="point">
-                        <img src="images/point.png" alt="localisation">
+                <div class="searchbar">
+                    <div class="recherche-icon">
+                        <i class="fas fa-map-marker-alt"></i>
                     </div>
-                        <label for="recherche"></label>
-                        <input type="text" name="ville" id="recherche" placeholder="Marseille, France">
-                        <input type="submit" value="Rechercher" class="recherche-bouton">
-                </form>
-
-                <form method="get" action="">
-                    <div class="filterbar">
-                        <h3>Filtres</h3>
-                        <label class="filteroption eco">
-                            <input type="checkbox" name="filter" value="economique">
-                            <img src="images/billet.png" alt="billet">Économique 
-                        </label>
-                        <label class="filteroption familial">
-                            <input type="checkbox" name="filter" value="Familial">
-                            <img src="images/homme.png" alt="homme">Familial 
-                        </label>
-                        <label class="filteroption romantique">
-                            <input type="checkbox" name="filter" value="Romantique">
-                            <img src="images/coeur.png" alt="coeur">Romantique 
-                        </label>
-                        <label class="filteroption pepites">
-                            <input type="checkbox" name="filter" value="pepites">
-                            <img src="images/flamme.png" alt="flamme">Nos pépites 
-                        </label>
-                    </div>
-                </form>
+                    <input type="text" class="recherche-input" placeholder="Marseille, France">
+                    <button class="recherche-button">Rechercher</button>
+                </div>
+                        <!--simplifiez ca en div class=bouton-->
+                <div class="filterbar">
+                    <p class="filter-label">Filtres</p>
+                        <button class="eco"><i class="fas fa-money-bill-wave"></i> Économique</button>
+                        <button class="familial"><i class="fas fa-user"></i> Familial</button>
+                        <button class="romantique"><i class="fas fa-heart"></i> Romantique</button>
+                        <button class="pepites"><i class="fas fa-fire"></i> Nos pépites</button>
+                </div>
 
                 <div class="infobar">
                     <img src="images/Icon.png" alt="info">
@@ -73,7 +60,7 @@
                     <div class="hebergements-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
-                    <div class="populaires-cards">
+                    <div class="hebergements-cards">
                         <a href="#">
                             <article class="card">
                                 <img src="images/port.png" alt="Image de la chambre d'hôtel montrant un lit">
@@ -266,10 +253,10 @@
                 <div class="activites-title">
                         <h2 class="section-title">Activités à Marseille</h2>
                 </div>
-                <div class="populaires-cards">
+                <div class="activites-cards">
                         <a href="#">
                             <article class="card">
-                                <img src="images/vieux.png" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="images/vieux.png" alt="Port">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Vieux-Port</h3>
@@ -279,7 +266,7 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="images/pomegues.png" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="images/pomegues.png" alt="chateau">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Fort de Pomègues</h3>
@@ -289,7 +276,7 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="images/calanques.png" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="images/calanques.png" alt="falaises">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Parc national des Calanques</h3>
@@ -299,7 +286,7 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="images/dame.png" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="images/dame.png" alt="ville">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
@@ -311,18 +298,18 @@
             </section>
         </main>
         <footer>
-            <article>
-                <h3>A propos</h3>
+            <article class="propos">
+                <h3>À propos</h3>
                 <div>Fonctionnement du site</div>
                 <div>Conditions générales</div>
                 <div>Données et confidentialité</div>
             </article>
-            <article>
+            <article class="heberg">
                 <h3>Nos hébergements</h3>
                 <div>Charte qualité</div>
                 <div>Proposer votre hôtel</div>
             </article>
-            <article>
+            <article class="assistance">
                 <h3>Assistance</h3>
                 <div>Centre d'aide</div>
                 <div>Nous contacter</div>
